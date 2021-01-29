@@ -1,0 +1,25 @@
+{
+  "name": "tiny-cognito",
+  "version": "0.0.1",
+  "description": "",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "exports": "dist/index.modern.js",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
+  },
+  "author": "DavidWells",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.13.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-browser": "0.1.0-preview.2"
+  }
+}
