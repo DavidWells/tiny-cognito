@@ -12,7 +12,7 @@ import cogniotAuth from 'tiny-cognito'
 export default async function getAuth() {
   const creds = await cogniotAuth({
     COGNITO_REGION: 'us-east-1',
-    IDENTITY_POOL_ID: 'us-east-1:1231311-8f1c-4978-b5e7-112322221'
+    IDENTITY_POOL_ID: 'us-east-1:1231311-8f1c-4978-b5e7-6ffdef08a4e9'
   })
   const aws = new AwsClient({
     accessKeyId: creds.AccessKeyId,
