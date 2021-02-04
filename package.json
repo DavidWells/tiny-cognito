@@ -16,6 +16,11 @@
   },
   "author": "DavidWells",
   "license": "ISC",
+  "homepage": "https://github.com/DavidWells/tiny-cognito#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidWells/tiny-cognito"
+  },
   "devDependencies": {
     "microbundle": "^0.13.0"
   },
