@@ -18,7 +18,7 @@ export default async function getAuth() {
     accessKeyId: creds.AccessKeyId,
     secretAccessKey: creds.SecretKey,
     sessionToken: creds.SessionToken,
-	})
+  })
   const data = await aws.fetch(`https://lambda.us-east-1.amazonaws.com/2015-03-31/functions/${lambdaArn}/invocations`, {
     body: JSON.stringify({
       data: 'foo'
