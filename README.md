@@ -12,18 +12,18 @@ import cogniotAuth from 'tiny-cognito'
 export default async function getAuth() {
   const creds = await cogniotAuth({
     COGNITO_REGION: 'us-east-1',
-    IDENTITY_POOL_ID: 'us-east-1:1231311-8f1c-4978-b5e7-6ffdef08a4e9'
+    IDENTITY_POOL_ID: 'us-east-1:1231311-8f1c-4978-b5e7-112322221'
   })
   const aws = new AwsClient({
-		accessKeyId: creds.AccessKeyId,
-		secretAccessKey: creds.SecretKey,
-		sessionToken: creds.SessionToken,
+    accessKeyId: creds.AccessKeyId,
+    secretAccessKey: creds.SecretKey,
+    sessionToken: creds.SessionToken,
 	})
   const data = await aws.fetch(`https://lambda.us-east-1.amazonaws.com/2015-03-31/functions/${lambdaArn}/invocations`, {
-		body: JSON.stringify({
+    body: JSON.stringify({
       data: 'foo'
     }),
-	}).then((d) => d.json())
+  }).then((d) => d.json())
   console.log('data', data)
 }
 ```
