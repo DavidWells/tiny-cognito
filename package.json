@@ -1,6 +1,6 @@
 {
   "name": "tiny-cognito",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Get AWS Cognito creds to use with aws4fetch",
   "source": "src/index.js",
   "main": "dist/index.js",
