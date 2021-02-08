@@ -4,7 +4,7 @@
   "description": "Get AWS Cognito creds to use with aws4fetch",
   "source": "src/index.js",
   "main": "dist/index.js",
-  "exports": "dist/index.modern.js",
+  "exports": "./dist/index.modern.js",
   "module": "dist/index.module.js",
   "unpkg": "dist/index.umd.js",
   "scripts": {
