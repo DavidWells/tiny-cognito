@@ -7,10 +7,10 @@ Mints [unauthenticated creds](https://docs.aws.amazon.com/AWSCloudFormation/late
 
 ```js
 import { AwsClient } from 'aws4fetch'
-import cogniotAuth from 'tiny-cognito'
+import cognitoAuth from 'tiny-cognito'
 
 export default async function getAuth() {
-  const creds = await cogniotAuth({
+  const creds = await cognitoAuth({
     COGNITO_REGION: 'us-east-1',
     IDENTITY_POOL_ID: 'us-east-1:1231311-8f1c-4978-b5e7-6ffdef08a4e9'
   })
